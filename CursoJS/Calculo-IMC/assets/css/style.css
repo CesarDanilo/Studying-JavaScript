@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
     --first-color: #A7BAF2;
@@ -21,26 +21,70 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 150px;
 }
 
 .main {
-    width: 500px;
-    height: 600px;
-    border-radius: 20px;
-    box-shadow: 10px 10px 80px #778fd9;
-    background-color: var(--second-color);
-}
-
-.main .info {
-    width: 500px;
-    height: 350px;
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 100px;
+    background-color: var(--second-color);
+    box-shadow: 10px 10px 45px var(--second-color);
 }
 
-.main .info h1 {
-    margin-top: 35px;
-    color: var(--first-colorFonts)
+table {
+    width: 500px;
+    height: auto;
+    border: 1px solid var(--first-color);
+    border-radius: 10px;
+}
+
+.linha {
+    display: flex;
+	justify-content: space-between;
+}
+
+.linha th{
+    height: auto;
+    width: 150px;
+    color: var(--first-colorFonts);
+    font-size: 16px;
+}
+
+.linha td{
+    height: auto;
+    width: 150px;
+    text-align: center;
+    color: var(--first-colorFonts);
+    font-size: 14px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    align-items: center;
+}
+
+.peso {
+    width: 80px;
+    margin: 25px;
+    text-align: center;
+    color: var(--first-colorFonts);
+}
+
+.altura {
+    width: 80px;
+    margin: 25px;
+    text-align: center;
+    color: var(--first-colorFonts);
+}
+
+.form button {
+    width: 75px;
+    height: 25px;
 }
