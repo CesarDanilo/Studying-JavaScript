@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap');
 
 :root {
     --first-color: #A7BAF2;
     --second-color: #778fd9b2;
     --third-color: #6273D9;
     --fourth-color: #3B42BF;
-    --first-colorFonts: #303030;
+    --first-colorFonts: #202020;
     --second-colorFonts: #F2F2F2;
 }   
 /*
@@ -17,23 +18,27 @@
 }
 
 body {
-    background-color: var(--first-color);
+    background-image: url('/assets/img/background.png');
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 200px;
+
 }
 
 .main {
-    width: auto;
-    height: auto;
+    width: 100%;
+    max-width: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border-radius: 10px;
     padding: 50px;
-    margin: 100px;
-    background-color: var(--second-color);
-    box-shadow: 10px 10px 45px var(--second-color);
+
+    background-color: transparent ;
+    backdrop-filter: blur(25px);
+    background-color: #ffffff11;
 }
 
 table {
@@ -52,7 +57,7 @@ table {
     height: auto;
     width: 150px;
     color: var(--first-colorFonts);
-    font-size: 16px;
+    font-weight: 900;
 }
 
 .linha td{
@@ -60,7 +65,7 @@ table {
     width: 150px;
     text-align: center;
     color: var(--first-colorFonts);
-    font-size: 14px;
+    font-weight: 600;
 }
 
 .form {
@@ -68,23 +73,80 @@ table {
     justify-content: space-around;
     width: 500px;
     align-items: center;
+    font-weight: 600;
 }
 
 .peso {
     width: 80px;
+    height: 20px;
     margin: 25px;
     text-align: center;
     color: var(--first-colorFonts);
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff62;
+}
+
+.peso:hover {
+    width: 80px;
+    height: 20px;
+    margin: 25px;
+    text-align: center;
+    color: var(--first-colorFonts);
+    border: none;
+    border-radius: 5px;
+
+    background-color: transparent;
+    backdrop-filter: blur(25px);
+    background-color: #ffffff05;
 }
 
 .altura {
     width: 80px;
+    height: 20px;
     margin: 25px;
     text-align: center;
     color: var(--first-colorFonts);
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff62;
+}
+
+.altura:hover {
+    width: 80px;
+    height: 20px;
+    margin: 25px;
+    text-align: center;
+    color: var(--first-colorFonts);
+    border: none;
+    border-radius: 5px;
+    
+    background-color: transparent;
+    backdrop-filter: blur(25px);
+    background-color: #ffffff05;
 }
 
 .form button {
     width: 75px;
     height: 25px;
+    
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #ffffff62;
+}
+
+.form button:hover {
+    width: 75px;
+    height: 25px;
+
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+
+    background-color: transparent;
+    backdrop-filter: blur(25px);
+    background-color: #ffffff05;
 }
