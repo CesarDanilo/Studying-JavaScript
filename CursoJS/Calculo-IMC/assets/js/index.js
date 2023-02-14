@@ -1,6 +1,6 @@
-
 function calcular(){
     const form = document.querySelector('.form');
+    const resposta = document.querySelector('.resposta');
 
     function caulculaIMC(event){
         event.preventDefault();
@@ -10,21 +10,21 @@ function calcular(){
         const resultado = (parseFloat(peso.value) / (parseFloat(altura.value) * parseFloat(altura.value)));
         
         if(resultado < 18.5){
-            window.alert('MAGRESA');
+            resposta.innerHTML = 'MAGRESA';
         }else if(resultado >= 18.5 && resultado <= 24.9){
-            window.alert('NORMAL');
+            resposta.innerHTML = 'NORMAL';
         }else if(resultado >= 25.0 && resultado <= 29.9){
-            window.alert('SOBREPESO');
+            resposta.innerHTML = 'SOBREPESO';
         }else if(resultado >= 30.0 && resultado <= 39.9){
-            window.alert('OBESIDADE');
+            resposta.innerHTML = 'OBESIDADE';
         }else if(resultado > 40.0){
-            window.alert('OBESIDADE GRAVE');
+            resposta.innerHTML = 'OBESIDADE GRAVE';
         }
 
-        console.log(resultado);
     }
 
     form.addEventListener('submit', caulculaIMC);
+    
 };
 
 calcular();
