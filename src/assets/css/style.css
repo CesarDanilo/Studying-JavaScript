@@ -1,0 +1,26 @@
+* {
+	margin: 0px;
+}
+
+body {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #343434;
+}
+
+.container {
+	height: 300px;
+	width: 650px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+	background-color: #2899df;
+}
+
+.container .timer {
+	font-size: 32px;
+	color: #000;
+}
