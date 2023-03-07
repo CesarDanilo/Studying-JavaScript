@@ -6,7 +6,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	background-color: #343434;
+	background-color: #232323;
 }
 
 .container {
@@ -17,10 +17,67 @@ body {
 	justify-content: center;
 	align-items: center;
 	border-radius: 15px;
-	background-color: #2899df;
+	background-color: #353535;
 }
 
 .container .timer {
 	font-size: 32px;
-	color: #000;
+	color: #ffffff;
+}
+
+.btniniciar {
+	border: none;
+	height: 25px;
+	width: auto;
+	border-radius: 4px;
+	background-color: #353535;
+	color: white;
+}
+
+.btniniciar:hover {
+	border: none;
+	height: 25px;
+	width: auto;
+	border-radius: 4px;
+	background-color: white;
+	color: #353535;
+	cursor: pointer;
+}
+
+.btnpausar {
+	border: none;
+	height: 25px;
+	width: auto;
+	border-radius: 4px;
+	background-color: #353535;
+	color: white;
+}
+
+.btnpausar:hover {
+	border: none;
+	height: 25px;
+	width: auto;
+	border-radius: 4px;
+	background-color: white;
+	color: #353535;
+	cursor: pointer;
+}
+
+.btnresetar {
+	border: none;
+	height: 25px;
+	width: auto;
+	border-radius: 4px;
+	background-color: #353535;
+	color: white;
+}
+
+.btnresetar:hover {
+	border: none;
+	height: 25px;
+	width: auto;
+	border-radius: 4px;
+	background-color: white;
+	color: #353535;
+	cursor: pointer;
 }

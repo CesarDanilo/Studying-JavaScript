@@ -16,19 +16,24 @@ function cronometro(segundos) {
 	});
 }
 
-btnIniciar.addEventListener('click', function (event){
+btnIniciar.addEventListener('click', function (event) {
 	clearInterval(timers); // passando esse comando, se clicarmos mais vezes em iniciar não irar acelerar o tempo do cronometro, ele vai apenas trazar e continuar normalmente
-	timers = setInterval(function(){
+	timers = setInterval(function () {
 		segundos++;
 		pTimer.innerHTML = cronometro(segundos);
 	}, 1000);
+	pTimer.style.color = "White";
 });
 
-btnPausar.addEventListener('click', function (event){
+btnPausar.addEventListener('click', function (event) {
 	clearInterval(timers); // clearInterval vai parar qualquer função de repetição que receba o setInterval()
+	pTimer.style.color = "Red";
+
 });
 
-btnResetar.addEventListener('click', function(event){
+btnResetar.addEventListener('click', function (event) {
 	segundos = 0;
 	pTimer.innerHTML = cronometro(segundos);
+	pTimer.style.color = "White";
 });
+
